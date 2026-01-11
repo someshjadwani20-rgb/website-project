@@ -1,0 +1,35 @@
+        .thankyou-container {
+            text-align: center;
+            padding: 50px 0;
+        }
+        
+        .thankyou-icon {
+            font-size: 100px;
+            color: #7b1fa2;
+            margin: 30px 0;
+        }
+        
+        .message-box {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(123, 31, 162, 0.2);
+            margin: 30px auto;
+            max-width: 600px;
+        }
+        
+        .footer-note {
+            margin-top: 40px;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .contact-btn {
+            display: inline-block;
+            background: #4a148c;
+            color: white;
+             padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            margin-top: 20px;
+            font-weight: bold;
