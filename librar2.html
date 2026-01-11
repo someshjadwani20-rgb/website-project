@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DSU Library Collection</title>
+    <link rel="stylesheet" href="librar2.css">
+</head>
+<body>
+    <div class="library-header">
+        <h1>Book Collection</h1>
+        <p>Best Reads, Your Way!</p>
+    </div>
+    <table>
+        <thead>
+        <tr>
+    <th>Book Title</th>
+    <th>Author</th>
+    <th>Publisher</th>
+    <th>Year</th>
+    <th>Availability</th>
+    <th>Price</th>
+    <th>Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>Harry Potter and the Philosopher's Stone</td>
+    <td>J.K. Rowling</td>
+    <td>Bloomsbury Publishing</td>
+    <td>1997</td>
+    <td>Available</td>
+    <td>$10</td>
+    <td>
+        <button class="buy-btn">Buy ($20)</button>
+        <button class="borrow-btn">Borrow</button>
+        <button class="cart-btn">Add to Cart</button>
+    </td>
+</tr>
+<tr>
+    <td>Harry Potter and the Chamber of Secrets</td>
+    <td>J.K. Rowling</td>
+    <td>Bloomsbury Publishing</td>
+    <td>1998</td>
+    <td>Available</td>
+    <td>$12</td>
+    <td>
+        <button class="buy-btn">Buy ($12)</button>
+        <button class="borrow-btn">Borrow</button>
+        <button class="cart-btn">Add to Cart</button>
+
+    </td>
+</tr>
+<tr>
+    <td>Harry Potter and the Prisoner of Azkaban</td>
+    <td>J.K. Rowling</td>
+    <td>Bloomsbury Publishing</td>
+    <td>1999</td>
+    <td>Available</td>
+    <td>$15</td>
+    <td>
+        <button class="buy-btn">Buy ($15)</button>
+        <button class="borrow-btn">Borrow</button>
+        <button class="cart-btn">Add to Cart</button>
+    </td>
+</tr>
+<tr>
+    <td>Harry Potter and the Goblet of Fire</td>
+    <td>J.K. Rowling</td>
+    <td>Bloomsbury Publishing</td>
+    <td>2000</td>
+    <td>Available</td>
+    <td>$18</td>
+    <td>
+        <button class="buy-btn">Buy ($18)</button>
+        <button class="borrow-btn">Borrow</button>
+        <button class="cart-btn">Add to Cart</button>
+    </td>
+</tr>
+<tr>
+    <td>Harry Potter and the Order of the Phoenix</td>
+    <td>J.K. Rowling</td>
+    <td>Bloomsbury Publishing</td>
+    <td>2003</td>
+    <td>Available</td>
+    <td>$20</td>
+    <td>
+        <button class="buy-btn">Buy ($20)</button>
+        <button class="borrow-btn">Borrow</button>
+        <button class="cart-btn">Add to Cart</button>
+    </td>
+</tr>
+<tr>
+    <td>Harry Potter and the Half-Blood Prince</td>
+    <td>J.K. Rowling</td>
+    <td>Bloomsbury Publishing</td>
+    <td>2005</td>
+    <td>Available</td>
+    <td>$22</td>
+    <td>
+        <button class="buy-btn">Buy ($22)</button>
+        <button class="borrow-btn">Borrow</button>
+        <button class="cart-btn">Add to Cart</button>
+    </td>
+</tr>
+<a href="end.html" class="btn">nextpage</a>
+</tbody>
+<script>
+        document.getElementById('searchInput').addEventListener('keyup', function() {
+            let filter = this.value.toLowerCase();
+            let rows = document.querySelectorAll('                      
+            rows.forEach(row => {
+                let title = row.cells[0].textContent.toLowerCase();
+                if (title.includes(filter)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</table>
+</body>
+</html>
